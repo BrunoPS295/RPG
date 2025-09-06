@@ -1,14 +1,8 @@
 from django.contrib import admin
 from django.utils.html import mark_safe
-from base.models.item import Item
+from base.models.item import item
 
-@admin.register(Item)
-class ItemAdmin(admin.ModelAdmin):
+@admin.register(item)
+class itemAdmin(admin.ModelAdmin):
     list_display = ('name',)
-    readonly_fields = ('image_tag',)
 
-    def image_tag(self, obj):
-        if obj.image:
-            return mark_safe(f'<img src="{obj.image.url}" style="max-height:800px;" />')
-        return "-"
-    image_tag.short_description = 'Imagem'

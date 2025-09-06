@@ -12,4 +12,4 @@ class info(models.Model):
     xp = models.IntegerField(default='0')
 
     def __str__(self):
-        return self.name
+        return str(self.name)

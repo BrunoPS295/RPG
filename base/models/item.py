@@ -9,7 +9,7 @@ def ficha_image_path(instance, filename):
     filename = f"{slugify(instance.name)}-{uuid.uuid4().hex}.{ext}"
     return os.path.join('items', str(instance.pk or 'temp'), filename)
 
-class Item(models.Model):
+class item(models.Model):
     name = models.CharField(max_length=50)
     description = models.CharField(max_length=1000)
     image = models.ImageField(

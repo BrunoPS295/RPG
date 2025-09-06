@@ -1,3 +1,3 @@
-from .item import Item
+from .item import item
 
-__all__ = ['Item']
+__all__ = ['item']
