@@ -10,7 +10,7 @@ class inventario(models.Model):
     pe = models.IntegerField(default='0')
     po = models.IntegerField(default='0')
     pl = models.IntegerField(default='0')
-    equipamento = models.ForeignKey(item, related_name="inventario", on_delete=models.CASCADE)
+    equipamento = models.ForeignKey(item, related_name="inventario", on_delete=models.CASCADE,null=True, blank=True)
 
     def __str__(self):
         return self.name
