@@ -1,8 +1,9 @@
 from django.db import models
 from ficha.models.base import base
 
-class atributos(models.Model):
-    name = models.ForeignKey(base, related_name="atributos", on_delete=models.CASCADE)
+class atributo(models.Model):
+    name = models.ForeignKey(base, related_name="atributo", on_delete=models.CASCADE)
+    
     proficiencia = models.IntegerField(default='0')
     inspiracao = models.CharField(null=True, blank=True,max_length=100)
 
