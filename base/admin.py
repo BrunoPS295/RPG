@@ -9,6 +9,6 @@ class ItemAdmin(admin.ModelAdmin):
 
     def image_tag(self, obj):
         if obj.image:
-            return mark_safe(f'<img src="{obj.image.url}" style="max-height:80px;" />')
+            return mark_safe(f'<img src="{obj.image.url}" style="max-height:800px;" />')
         return "-"
     image_tag.short_description = 'Imagem'
