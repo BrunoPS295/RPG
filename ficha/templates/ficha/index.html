@@ -1,0 +1,11 @@
+{% extends "ficha/ficha.html" %}
+
+ads
+{% block content %}
+{% for ficha in fichas %}
+    <p>{{ficha}}</p>
+{% empty %}
+    <p>0_0</p>
+{% endfor %}
+{% endblock content %}
+ads

@@ -5,7 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('items/', views.items, name='items'),
 ]
 
 if settings.DEBUG:
