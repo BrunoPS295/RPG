@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha {name}</title>
+    <link rel="stylesheet" href="static/base/estilos/ficha.css">
+    <link rel="stylesheet" href="static/base/estilos/ficha-media-query.css">
+</head>
+<body>
+    <form action="get">
+        <header>
+            <div id="title">
+                <img src="static/images/download.png" alt="logo rpg">
+                <h1>Nome do rpg</h1>
+            </div>
+            <div id="lore">
+                <div id="l_header">
+                    <input type="text">
+                    <p>Nome do personagem</p>
+                </div>
+                <div id="r_header">
+                    <div>
+                        <input type="text">
+                        <p>Classe</p>
+                    </div>
+                    <div>
+                        <input type="text">
+                        <p>Antecedente</p>
+                    </div>
+                    <div>
+                        <input type="text">
+                        <p>Jogador</p>
+                    </div>
+                    <div>
+                        <input type="text">
+                        <p>Raça</p>
+                    </div>
+                    <div>
+                        <input type="text">
+                        <p>Alinhamento</p>
+                    </div>
+                    <div>
+                        <input type="text">
+                        <p>Experience</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id="atributos">
+                <div>
+                    <p>Força</p>
+                    <input required type="number">
+                    <span id="mod">{}</span>
+                </div>
+                <div>
+                    <p>Destreza</p>
+                    <input required type="number">
+                    <span id="mod">{}</span>
+                </div>
+                <div>
+                    <p>Constituição</p>
+                    <input required type="number">
+                    <span id="mod">{}</span>
+                </div>
+                <div>
+                    <p>Inteligência</p>
+                    <input required type="number">
+                    <span id="mod">{}</span>
+                </div>
+                <div>
+                    <p>Sabedoria</p>
+                    <input required type="number">
+                    <span id="mod">{}</span>
+                </div>
+                <div>
+                    <p>Carisma</p>
+                    <input required type="number">
+                    <span id="mod">{}</span>
+                </div>
+            </div>
+        </section>
+        <main>
+            <div id="l_main">
+                <div id="inspiracao">
+                    <input type="number">
+                    <p>Inspiração</p>
+                </div>
+                <div id="prof">
+                    <input type="number">
+                    <p>Bônus de proficiência</p>
+                </div>
+                <div id="salva">
+                    <div class="_salva">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Força</p>
+                    </div>
+                    <div class="_salva">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Destreza</p>
+                    </div>
+                    <div class="_salva">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Constituição</p>
+                    </div>
+                    <div class="_salva">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Inteligência</p>
+                    </div>
+                    <div class="_salva">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Sabedoria</p>
+                    </div>
+                    <div class="_salva">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Carisma</p>
+                    </div>
+                    <p>Salvaguardas</p>
+                </div>
+                <div id="pericias">
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Acrobacia <span>(Des)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Arcanismo <span>(Int)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Atletismo <span>(For)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Atuação <span>(Car)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Enganação <span>(Car)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Furtividade <span>(Des)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>História <span>(Int)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Intimidação <span>(Car)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Intuição <span>(Sab)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Investigação <span>(Int)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Lidar com Animais <span>(Sab)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Medicina <span>(Sab)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Natureza <span>(Int)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Percepção <span>(Sab)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Persuasão <span>(Car)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Prestidigitação <span>(Des)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Religião <span>(Int)</span></p>
+                    </div>
+                    <div class="_pericias">
+                        <input type="checkbox">
+                        <input type="number">
+                        <p>Sobrevivência <span>(Sab)</span></p>
+                    </div>
+                    <p>Perícias</p>
+                </div>
+                <div id="percepcao">
+                    <input type="number">
+                    <p>Sabedoria passiva (Percepção)</p>
+                </div>
+            </div> 
+            <div id="m_main">
+                <div id="ladin">
+                    <div id="ca">
+                        <p>Classe de armadura</p>
+                        <input type="number">
+                    </div>
+                    <div id="iniciativa">
+                        <p>Iniciativa</p>
+                        <input type="number">
+                    </div>
+                    <div id="deslocamento">
+                        <p>Deslocamento</p>
+                        <input type="number">
+                    </div>
+                </div>
+                <div id="vida">
+                    <div id="max_vida">Pontos de Vida Máximos<input type="number"></div>
+                    <Textarea></Textarea>
+                    <p>Pontos de Vida Atuais</p>
+                </div>
+                <div id="temp_vida">
+                    <Textarea></Textarea>
+                    <p>Pontos de Vida Temporários</p>
+                </div>
+                <div id="d_vida">
+                    <div>Total<input type="number"></div>
+                    <textarea></textarea>
+                    <p>Dados de Vida</p>
+                </div>
+                <div id="faleceu">
+                    <p>Sucessos <input type="checkbox"><input type="checkbox"><input type="checkbox"></p>
+                    <p>Falhas <input type="checkbox"><input type="checkbox"><input type="checkbox"></p>
+                    <p>Salvaguardas Contra a Morte</p>
+                </div>
+                <div id="ataques">
+                    <p>Ataques</p>
+                    <p><input type="text"><input type="number"><input type="text"></p>
+                </div>
+            </div>
+            <div id="r_main">
+                <div id="tracos">
+                    <p><textarea></textarea></p>
+                    <p>Traços e Personalidades</p>
+                </div>
+                <div id="ideais">
+                    <p><textarea></textarea></p>
+                    <p>Ideais</p>
+                </div>
+                <div id="vinculos">
+                    <p><textarea></textarea></p>
+                    <p>Vínculos</p>
+                </div>
+                <div id="fraquezas">
+                    <p><textarea></textarea></p>
+                    <p>Fraquezas</p>
+                </div>
+                <div id="caracteristicas">
+                    <p><textarea></textarea></p>
+                    <p>Caracteristicas e Talentos</p>
+                </div>
+                <div id="prof_idi">
+                    <p><textarea></textarea></p>
+                    <p>Proficiências e Idiomas</p>
+                </div>
+            </div>   
+        </main>
+        <section id="inventario">
+                <div id="itens">
+                    <div id="coin">
+                        <p><span>PC</span><input type="number"></p>
+                    </div>
+                    <div id="coin">
+                        <p><span>PP</span><input type="number"></p>
+                    </div>
+                    <div id="coin">
+                        <p><span>PE</span><input type="number"></p>
+                    </div>
+                    <div id="coin">
+                        <p><span>PO</span><input type="number"></p>
+                    </div>
+                    <div id="coin">
+                        <p><span>PL</span><input type="number"></p>
+                    </div>
+                </div>
+        </section>
+        <input type="submit" value="Save" >
+    </form>
+</body>
+</html>

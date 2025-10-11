@@ -1,0 +1,32 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#hidden{
+    z-index: 2;
+    position: absolute;
+}
+
+#menu{
+    position: absolute;
+    width: 250px;
+    float: left;
+    background-color: rgb(104, 0, 0);
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+#menu select, #menu a, #menu h1{
+    margin: 20px auto;
+}
+
+#menu select{
+    width: 90%;
+    text-align: center;
+}

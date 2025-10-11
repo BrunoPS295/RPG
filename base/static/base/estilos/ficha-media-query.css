@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@media (max-width: 765px){
+    #atributos{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    #r_header input{
+        width: 100%;
+    }
+
+    #r_header > div{
+        width: 70%;
+
+    }
+}

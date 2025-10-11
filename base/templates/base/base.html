@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="static/base/estilos/base.css">
+    <script>
+        function botao(){
+            const menu = document.getElementById('menu');
+            if(menu.style.display === 'none'){
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="hidden" onclick="botao()">==</button>
+    <div id='menu'>
+        <h1>rpg name</h1>
+        <select name="base_rpg" id="base_irpg">
+            <option value="" disabled selected hidden>RPG</option>
+            
+            <option value="d&d">d&d</option>
+        </select>
+        <select id="base_fichas">
+            <option value="" disabled selected hidden>Fichas</option>
+            {% for ficha in fichas%}
+            
+                <option value="{% url 'ficha_detail' %}">
+                    {{ficha.name}}
+                </option>
+            
+            {% empty %}
+            <option value="0">0_0</option>
+            {% endfor %}
+        </select>
+        <a href="#"><button>Documentação</button></a>
+        <a href="#"><button>Mapas</button></a>
+    </div>
+    {% block content %}
+    
+    {% endblock content %}
+</body>
+</html>
