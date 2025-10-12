@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="static/base/estilos/base.css">
+    <link rel="stylesheet" href="static/base/css/base.css">
     <script>
         function botao(){
             const menu = document.getElementById('menu');
@@ -25,18 +25,16 @@
             
             <option value="d&d">d&d</option>
         </select>
-        <select id="base_fichas">
-            <option value="" disabled selected hidden>Fichas</option>
-            {% for ficha in fichas%}
-            
-                <option value="{% url 'ficha_detail' %}">
-                    {{ficha.name}}
-                </option>
-            
-            {% empty %}
-            <option value="0">0_0</option>
-            {% endfor %}
-        </select>
+           <ul>
+                <li>Fichas</li>
+                {% for ficha in fichas %}
+                <li>
+                    <a href="{% url 'ficha:ficha' %}">{{ficha.name}}</a>
+                </li>
+                {% empty %}
+                <li>0_0<li>
+                {% endfor %}
+            <ul>
         <a href="#"><button>Documentação</button></a>
         <a href="#"><button>Mapas</button></a>
     </div>

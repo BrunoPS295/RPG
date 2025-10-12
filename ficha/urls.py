@@ -3,8 +3,10 @@ from django.conf.urls.static import static
 from django.urls import path
 from . import views
 
+app_name = 'ficha'
+
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.index, name='ficha'),
 ]
 
 if settings.DEBUG:
